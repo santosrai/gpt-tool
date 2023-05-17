@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "File Upload GPT Extension",
+    "version": "1.0",
+    "description": "Adds a 'Submit File' button to upload the file.",
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "permissions": ["activeTab"]
+  }
+  

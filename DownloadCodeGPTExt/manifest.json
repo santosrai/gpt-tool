@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Code Export GPT Extension",
+  "version": "1.0",
+  "description": "Adds a 'Create File' button to code blocks for saving code as files.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["clipboardRead", "downloads"]
+}
